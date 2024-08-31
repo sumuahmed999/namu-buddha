@@ -2,6 +2,7 @@
     --primary: #2EB872;
     --light: #F3F4F5;
     --dark: #282F34;
+    --brn: #0e6a6d;
 }
 
 .back-to-top {
@@ -471,6 +472,12 @@
     transform: scale(1);
 }
 
+.testimonial-carousel .owl-item.center .testimonial-text2 {
+    background: var(--brn);
+    transform: scale(1);
+}
+
+
 .testimonial-carousel .owl-item .testimonial-text *,
 .testimonial-carousel .owl-item .testimonial-item img {
     transition: .5s;
@@ -580,4 +587,21 @@
 
 #pg{
     text-align: justify;
+}
+
+#scrollTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    right: 30px; /* 30px from the right */
+    z-index: 99; /* Ensure it's on top of other elements */
+}
+
+#scrollTopBtn:hover {
+    background-color: #0056b3; /* Darker shade on hover (optional) */
+}
+.navbar-toggler-icon {
+    width: 20px;  /* Adjust the width */
+    height: 20px; /* Adjust the height */
+    background-size: 100%; /* Ensure the icon scales correctly */
 }
